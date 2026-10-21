@@ -1,46 +1,35 @@
 # G-CATS app design
 
-## Code layout
-
-```
-run_gcats.py      start here
-gcats/
-  app.py          main window, title bar, page rail, logging
-  config.py       all settings, preset save/load
-  gamepad.py      reads the gamepad
-  mapping.py      dead-zone, circle-to-square, scale
-  stimuli.py      finds media files, sets order
-  media.py        image / video / audio players
-  overlay.py      draws the rating grid and cursor
-  runner.py       fullscreen session
-  logger.py       writes CSV and JSON files
-  theme.py        colours and styles
-  pages/          one file per setup page
-```
+> ## Code layout
+> 
+> ```
+> run_gcats.py      start here
+> gcats/
+>   app.py          main window, title bar, page rail, logging
+>   config.py       all settings, preset save/load
+>   gamepad.py      reads the gamepad
+>   mapping.py      dead-zone, circle-to-square, scale
+>   stimuli.py      finds media files, sets order
+>   media.py        image / video / audio players
+>   overlay.py      draws the rating grid and cursor
+>   runner.py       fullscreen session
+>   logger.py       writes CSV and JSON files
+>   theme.py        colours and styles
+>   pages/          one file per setup page
+> ```
 
 ## 1. Start-up
 
-| Step | What happens | Code |
+|  |  | Code |
 |---|---|---|
 | Launch | `python run_gcats.py` or `python -m gcats` | [run_gcats.py](run_gcats.py), [gcats/\_\_main\_\_.py](gcats/__main__.py) |
 | Logging | Messages go to the console and `~/.gcats/gcats.log` | `_setup_logging()` in [gcats/app.py](gcats/app.py) |
 | Splash | Logo shows for 1.4 s | `SplashScreen`, `run()` in [gcats/app.py](gcats/app.py) |
-| Main window | Builds settings, gamepad, rail and pages | `MainWindow.__init__` in [gcats/app.py](gcats/app.py) |
+| Main window | Builds settings, gamepad and pages | `MainWindow.__init__` in [gcats/app.py](gcats/app.py) |
 
 ## 2. Main window
 
-```
-+-----------------------------------------------+
-| TitleBar  (logo, name, minimise, close)       |
-+-----------+-----------------------------------+
-| Stage     |  Page stack (one setup page       |
-| rail      |  visible at a time)               |
-| StageRow  |                                   |
-| StageRow  |  [hint]              [Continue]   |
-+-----------+-----------------------------------+
-```
-
-| Part | Job | Code |
+|  |  | Code |
 |---|---|---|
 | `TitleBar` | Drag to move, minimise, close | [gcats/app.py](gcats/app.py) |
 | `StageRow` | One rail entry; click to jump to that page | [gcats/app.py](gcats/app.py) |
@@ -53,7 +42,7 @@ gcats/
 
 Every page and the session window share the same two objects.
 
-| Object | Holds | Code |
+|  |  | Code |
 |---|---|---|
 | `Config` | All settings for the session | [gcats/config.py](gcats/config.py) |
 | `Gamepad` | The connected controller and its settings | [gcats/gamepad.py](gcats/gamepad.py) |
@@ -70,7 +59,7 @@ All pages extend `Page` in [gcats/pages/base.py](gcats/pages/base.py):
 - `on_leave()` runs on Continue and writes widget values into `Config`
 - `done` is the signal that tells `MainWindow` to move on
 
-| # | Page | File | Writes to `Config` |
+|  |  |  | Writes to `Config` |
 |---|---|---|---|
 | 1 | Startup | [startup.py](gcats/pages/startup.py) | nothing; checks packages and opens the gamepad |
 | 2 | Participant | [participant.py](gcats/pages/participant.py) | `participant_id`, `session`, `age`, `gender` |
@@ -89,7 +78,6 @@ All pages extend `Page` in [gcats/pages/base.py](gcats/pages/base.py):
 GAP --> [SUMMARY before] --> STIMULUS --> [SUMMARY after] --> GAP --> ... --> DONE
 ```
 
-| State | Method | What happens |
 |---|---|---|
 | GAP | `step_gap()` | Fixation cross or blank for `gap_duration`, then the next trial |
 | STIMULUS | `begin_stimulus()`, `step_stimulus()` | Plays the media and records the stick |
@@ -154,7 +142,7 @@ Rows stay in memory during a trial and are written at the end of each trial (`Se
 | Wrong rate in data | `achieved_hz` column; `SessionWindow.step_stimulus()` |
 | Settings not restored | `Config.load_default()`; check the log for "loaded preset" |
 
-## How a stick position becomes a rating
+## 10. How a stick position becomes a rating
 
 Each gamepad reading goes through five steps. The values from steps 1, 4 and 5 are all saved in the CSV, so any step can be redone later.
 
