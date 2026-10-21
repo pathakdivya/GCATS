@@ -1,5 +1,5 @@
 
-<img src="GCATS assets/gcats-logo.svg" alt="Alt Text" width="200">
+<img src="gcats-logo.svg" alt="GCATS logo" width="200">
 
 # GCATS
 **Gamepad-based Continuous Affect Tracing System**
