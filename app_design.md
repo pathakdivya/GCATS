@@ -141,3 +141,23 @@ Rows stay in memory during a trial and are written at the end of each trial (`Se
 | Video won't play | `_open_player()` in media.py; the error box text is also in the log |
 | Wrong rate in data | `achieved_hz` column; `SessionWindow.step_stimulus()` |
 | Settings not restored | `Config.load_default()`; check the log for "loaded preset" |
+
+> ## App settings presets
+> 
+> The Configuration page can save and load settings as `.json` files:
+> 
+> ```json
+> {
+>   "sampling_hz": 10,
+>   "axis_min": 0,
+>   "axis_max": 100,
+>   "joystick_mapping": "circle_to_square",
+>   "cursor_opacity": 0.75,
+>   "low_valence_label": "Unpleasant",
+>   "high_valence_label": "Pleasant",
+>   "low_arousal_label": "Calm",
+>   "high_arousal_label": "Activated"
+> }
+> ```
+> 
+> - Your last-used settings are saved to `C:\Users\<you>\.gcats\default_preset.json` (Windows) | `~/.gcats/default_preset.json` (macOS / Linux) and loaded on the next start. 
