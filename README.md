@@ -71,26 +71,6 @@ Both CSVs have the same columns:
 
 Because raw values are always saved, you can redo the dead-zone, mapping or scale later.
 
-## App settings presets
-
-The Configuration page can save and load settings as `.json` files:
-
-```json
-{
-  "sampling_hz": 10,
-  "axis_min": 0,
-  "axis_max": 100,
-  "joystick_mapping": "circle_to_square",
-  "cursor_opacity": 0.75,
-  "low_valence_label": "Unpleasant",
-  "high_valence_label": "Pleasant",
-  "low_arousal_label": "Calm",
-  "high_arousal_label": "Activated"
-}
-```
-
-- Your last-used settings are saved to `C:\Users\<you>\.gcats\default_preset.json` (Windows) | `~/.gcats/default_preset.json` (macOS / Linux) and loaded on the next start. 
-
 ## Troubleshooting
 
 ### Common problems
