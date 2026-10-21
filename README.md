@@ -135,6 +135,7 @@ Then start the app as usual with `python run_gcats.py`.
 - For how the code is laid out, See [app_design.md](app_design.md).
 - For some of the transformations that the Software does, See [feature_loigc.md](feature_logic.md).
 - For contributing, See [contributing.md](contributing.md)
+- For the detailed wiki with images, See [GCATS wiki](https://github.com/pathakdivya/GCATS/wiki)
 
 ## Licence
 [GNU GPL-3.0 license](LICENSE.md)
