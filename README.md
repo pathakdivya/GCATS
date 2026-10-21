@@ -1,5 +1,5 @@
 
-![GCATS logo](./GCATS assets/gcats-logo.svg)
+<img src="GCATS assets/gcats-logo.svg" alt="Alt Text" width="200">
 
 # G-CATS
 
