@@ -134,5 +134,5 @@ Then start the app as usual with `python run_gcats.py`.
 </ul>
 
 ## Licence
-[GNU GPL v3.0](LICENSE.md)
+[GNU GPL-3.0 license](LICENSE.md)
 
