@@ -125,11 +125,9 @@ Then start the app as usual with `python run_gcats.py`.
 
 ## Pages
 
-<ul>
-  <li>For how the code is laid out, See [app_design.md](app_design.md).</li>
-  <li>For some of the transformations that the Software does, See [feature_loigc.md](feature_logic.md).</li>
-  <li>For contributing, See [contributing.md](contributing.md)</li>
-</ul>
+- For how the code is laid out, See [app_design.md](app_design.md).
+- For some of the transformations that the Software does, See [feature_loigc.md](feature_logic.md).
+- For contributing, See [contributing.md](contributing.md)
 
 ## Licence
 [GNU GPL-3.0 license](LICENSE.md)
