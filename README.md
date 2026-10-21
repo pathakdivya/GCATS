@@ -1,3 +1,4 @@
+<a href="https://doi.org/10.5281/zenodo.23536403"><img src="https://zenodo.org/badge/1330790388.svg" alt="DOI"></a>
 
 <img src="gcats-logo.svg" alt="GCATS logo" width="200">
 
