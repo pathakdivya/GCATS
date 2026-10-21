@@ -71,7 +71,7 @@ Both CSVs have the same columns:
 
 Because raw values are always saved, you can redo the dead-zone, mapping or scale later.
 
-## App settings Presets
+## App settings presets
 
 The Configuration page can save and load settings as `.json` files:
 
