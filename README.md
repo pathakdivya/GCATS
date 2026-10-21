@@ -7,8 +7,6 @@
 
 G-CATS enables the continuous capture of self-reported affective ratings on a dual-axis Cartesian grid using a gamepad thumbstick. It also supports summary ratings within the same session, collected either before or after each stimulus. Images, videos, and audio files can be mixed in a single session. 
 
-Software was built at [NSLab](https://sites.google.com/site/ammuns68), [Department of Cognitive Science](https://www.cgs.iitk.ac.in/user/cgs/cgs/), IIT Kanpur.
-
 > Please look at the guided training protocol to get the raters used to the device and response interface. Link to [GCATS-training](https://github.com/pathakdivya/GCATS-training)
 
 ## Install and run from Source Code
@@ -123,3 +121,5 @@ Then start the app as usual with `python run_gcats.py`.
 
 ## Citation (APA)
 `Divya Pathak. (2026). pathakdivya/GCATS: GCATS v.1.0 (Version v.1.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.23536404`
+
+Software was built by Divya Pathak at [NSLab](https://sites.google.com/site/ammuns68), [Department of Cognitive Science](https://www.cgs.iitk.ac.in/user/cgs/cgs/), IIT Kanpur.
