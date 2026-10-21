@@ -113,3 +113,5 @@ Then start the app as usual with `python run_gcats.py`.
 ## Licence
 [GNU GPL-3.0 license](LICENSE.md)
 
+## Citation (APA)
+`Divya Pathak. (2026). pathakdivya/GCATS: GCATS v.1.0 (Version v.1.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.23536404`
