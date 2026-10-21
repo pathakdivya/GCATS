@@ -24,6 +24,26 @@ python run_gcats.py
 
 Please use [this link](https://github.com/pathakdivya/GCATS/releases/tag/v.1.0) to download the latest release of the software that includes `GCATS-setup.exe`. Download and double click on it to Install the GCATS app.
 
+## Screenshots
+<table width="100%">
+<tr>
+<td width="33%"><img src="https://github.com/user-attachments/assets/b277e608-0a7e-4a55-ba99-edca0365949d" /></td>
+<td width="33%"><img src="https://github.com/user-attachments/assets/f00e3a05-7a22-43bf-859b-12e1f2a4954d"/></td>
+<td width="33%"><img src="https://github.com/user-attachments/assets/bcbe6ceb-b3bc-4a7c-8e95-c7c9a4a0fadd" /></td>
+</tr>
+<tr>
+<td width="33%"><img src="https://github.com/user-attachments/assets/0d37471e-55c7-4e57-af77-614150725e1c"/></td>
+<td width="33%"><img src="https://github.com/user-attachments/assets/383a1a90-dcc0-4591-8269-0ab26123bb8b"/></td>
+<td width="33%"><img src="https://github.com/user-attachments/assets/7cfc027e-abea-4972-bff7-cdb2fa4b0fc8"/></td>
+</tr>
+<tr>
+<td width="33%"><img src="https://github.com/user-attachments/assets/6faee076-b481-46d5-8322-0e284ee61746"/></td>
+<td width="33%"><img src="https://github.com/user-attachments/assets/a8fd2b2e-0463-4506-982f-1d8312ea1168"/></td>
+<td width="33%"><img src="https://github.com/user-attachments/assets/f62e61bf-f79e-4d37-9d0b-df91280af8ae"/></td>
+</tr>
+</table>
+
+
 ## Running a session
 
 |  | Page | What you do |
