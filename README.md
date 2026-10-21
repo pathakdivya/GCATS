@@ -99,11 +99,11 @@ The Configuration page can save and load settings as `.json` files:
 
 ## Display
 
-- The rating grid is a square centred on the media, not the screen.
+- The rating grid is a square centred on the media box. 
 - Shown on the grid: a faint centre cross, optional guide lines through the cursor, the cursor, and the four end labels. Leave a label blank to hide it.
-- **Aspect ratio:** `original` keeps the media size and only shrinks it to fit. `1:1`, `3:2`, `4:3` and `16:9` use a fixed shape.
-- **Inner margin:** this percentage is kept empty on every side of the screen (default 10%).
-- **Summary screen:** same grid, plus a valence bar below and an arousal bar to the right.
+- **Aspect ratio:** `original` keeps the media size and only shrinks it to fit fullscreen. `1:1`, `3:2`, `4:3` and `16:9` use a fixed shape.
+- **Inner margin:** this percentage is kept empty on every side of the screen (default 10%). Helps in clean display during the recording. 
+- **Summary screen:** Asks the rator to give a single value on the dual-axis grid. 
 - **Audio:** the grid sits in the upper part of the screen with a progress bar below.
 
 ## Gamepad layout
@@ -127,24 +127,6 @@ python run_gcats.py
 | "playback failed" box | Check `ffpyplayer` is installed and the file opens in a media player |
 | Cursor moves the wrong way vertically | Tick the flip box on the Check page |
 | Cursor drifts with no hand on the stick | Measure the dead-zone again |
-
-## Code layout
-
-```
-run_gcats.py      start here
-gcats/
-  app.py          main window, title bar, page rail, logging
-  config.py       all settings, preset save/load
-  gamepad.py      reads the gamepad
-  mapping.py      dead-zone, circle-to-square, scale
-  stimuli.py      finds media files, sets order
-  media.py        image / video / audio players
-  overlay.py      draws the rating grid and cursor
-  runner.py       fullscreen session
-  logger.py       writes CSV and JSON files
-  theme.py        colours and styles
-  pages/          one file per setup page
-```
 
 ## Licence
 
