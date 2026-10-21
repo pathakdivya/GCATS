@@ -68,9 +68,13 @@ The rating session runs fullscreen. **Escape** stops it early and still saves th
 - **Summary screen:** Asks the rator to give a single value on the dual-axis grid. 
 - **Audio:** the grid sits in the upper part of the screen with a progress bar below.
 
-## Gamepad layout
+## Gamepads Layout and recommended holding style
 
-Axes `0/1` = left stick, `2/3` = right stick. Buttons `4` = left shoulder, `5` = right shoulder. For other layouts, edit `axis_x`, `axis_y`, `btn_confirm` in `gcats/config.py`.
+Axes `0/1` = left stick, `2/3` = right stick. Buttons `4` = left shoulder, `5` = right shoulder. For other layouts, edit `axis_x`, `axis_y`, `btn_confirm` in `gcats/config.py`. Choose between these two holding styles for the rating task, your choice can depend on your handedness or just general comfort levels
+
+<img width="2073" height="758" alt="Xbox Controller Grip Comparison" src="https://github.com/user-attachments/assets/70a4d6d8-32da-41f3-ae62-94be0bdfcbc3" />
+
+
 
 ## Saving the Data
 
