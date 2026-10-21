@@ -7,7 +7,7 @@
 
 Participants rate how they feel (valence and arousal) by moving a gamepad thumbstick while they watch, view or listen to stimuli. They can rate continuously, give one rating per stimulus, or both. Images, video and audio can be mixed in one session.
 
-For how the code is laid out, see [app_design.md](app_design.md).
+For how the code is laid out, See [app_design.md](app_design.md).
 
 ## Install and run
 
@@ -148,4 +148,4 @@ gcats/
 
 ## Licence
 
-GNU GPL (to be added).
+[GNU GPL v3.0](LICENSE.md)
