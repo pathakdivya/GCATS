@@ -1,8 +1,18 @@
 ## Measuring (Dead-zone page)
 
-With your hands off the stick, the app records the raw x/y position for 3 seconds, about 180 samples. The centre is the average of those samples: c_x = mean(x), c_y = mean(y). The spread is the farthest any sample strayed from that centre: spread = max( sqrt((x − c_x)² + (y − c_y)²) ). The dead-zone is the spread plus a 25% safety margin, kept between 0.02 and 0.08: d = clamp(spread × 1.25, 0.02, 0.08). If the spread is above 0.15, or no data arrived, the stick was probably touched. Nothing is saved and you are asked to measure again.
-
-Using it (every reading). First subtract the centre and keep the result in −1 to 1: x' = clamp(raw_x − c_x), y' = clamp(raw_y − c_y). Then find the distance from the middle, r = sqrt(x'² + y'²). If r < d, the output is (0, 0), so jitter is ignored. Otherwise the output is shrunk towards the middle by k = (r − d) / ((1 − d) · r), giving (k·x', k·y'). This makes the result start from 0 at the edge of the dead-zone and still reach exactly 1 at full tilt, with no sudden jump.
+With your hands off the stick, the app records the raw `x/y` position for 3 seconds, about 180 samples. The centre is the average of those samples: 
+```
+c_x = mean(x), c_y = mean(y)
+```
+The spread is the farthest any sample strayed from that centre: 
+```
+spread = max( sqrt((x − c_x)² + (y − c_y)²) )
+```
+The dead-zone is the spread plus a 25% safety margin, kept between 0.02 and 0.08: 
+```
+d = clamp(spread × 1.25, 0.02, 0.08)
+```
+If the spread is above 0.15, or no data arrived, the stick was probably touched. Nothing is saved and you are asked to measure again.
 
 > Note: The centre removes a steady offset, which is a bias. The dead-zone only has to cover random jitter around the true centre, so it can stay small and doesn't throw away small deliberate movements. The raw values are saved unchanged, and centre_x, centre_y and dead_zone are saved on every row, so you can redo or check the correction later.
 
