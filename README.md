@@ -7,7 +7,7 @@
 
 G-CATS enables the continuous capture of self-reported affective ratings on a dual-axis Cartesian grid using a gamepad thumbstick. It also supports summary ratings within the same session, collected either before or after each stimulus. Images, videos, and audio files can be mixed in a single session.
 
-## Install and run
+## Install and run from Source Code
 
 Needs Python 3.10+ and a connected gamepad.
 
@@ -17,6 +17,10 @@ python run_gcats.py
 ```
 
 `ffprobe` (from FFmpeg) on your PATH is optional. It only shows media lengths in the Stimuli table.
+
+## Windows Installer
+
+Please use this link to download the latest release of the software that includes `GCATS-setup.exe`. Download and double click on it to Install the GCATS app.
 
 ## Running a session
 
