@@ -138,7 +138,7 @@ Then start the app as usual with `python run_gcats.py`.
 - For the detailed wiki with images, See [GCATS wiki](https://github.com/pathakdivya/GCATS/wiki)
 
 ## Licence
-[GNU GPL-3.0 license](LICENSE.md)
+[GNU GPL-3.0 license](LICENSE)
 
 ## Citation (APA)
 `Divya Pathak. (2026). pathakdivya/GCATS: GCATS v.1.0 (Version v.1.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.23536404`
