@@ -6,8 +6,6 @@
 
 G-CATS enables the continuous capture of self-reported affective ratings on a dual-axis Cartesian grid using a gamepad thumbstick. It also supports summary ratings within the same session, collected either before or after each stimulus. Images, videos, and audio files can be mixed in a single session.
 
-For how the code is laid out, See [app_design.md](app_design.md).
-
 ## Install and run
 
 Needs Python 3.10+ and a connected gamepad.
@@ -127,6 +125,14 @@ To get more detail in the log, turn on debug mode before starting the app:
 
 Then start the app as usual with `python run_gcats.py`.
 
-## Licence
+## Pages
 
+<ul>
+  <li>For how the code is laid out, See [app_design.md](app_design.md).</li>
+  <li>For some of the transformations that the Software does, See [feature_loigc.md](feature_logic.md).</li>
+  <li>For contributing, See [contributing.md](contributing.md)</li>
+</ul>
+
+## Licence
 [GNU GPL v3.0](LICENSE.md)
+
