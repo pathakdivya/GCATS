@@ -71,7 +71,7 @@ Both CSVs have the same columns:
 
 Because raw values are always saved, you can redo the dead-zone, mapping or scale later.
 
-## Presets
+## App settings Presets
 
 The Configuration page can save and load settings as `.json` files:
 
@@ -89,9 +89,7 @@ The Configuration page can save and load settings as `.json` files:
 }
 ```
 
-- Your last-used settings are saved to `C:\Users\<you>\.gcats\default_preset.json` and loaded on the next start.
-- Keys the app doesn't recognise are ignored, so old presets still load.
-- Participant details and stimulus files are never stored in presets.
+- Your last-used settings are saved to `C:\Users\<you>\.gcats\default_preset.json` (Windows) | `~/.gcats/default_preset.json` (macOS / Linux) and loaded on the next start. 
 
 ## Troubleshooting
 
