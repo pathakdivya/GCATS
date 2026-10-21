@@ -89,7 +89,7 @@ The Configuration page can save and load settings as `.json` files:
 }
 ```
 
-- Your last-used settings are saved to `~/.gcats/default_preset.json` and loaded on the next start.
+- Your last-used settings are saved to `C:\Users\<you>\.gcats\default_preset.json` and loaded on the next start.
 - Keys the app doesn't recognise are ignored, so old presets still load.
 - Participant details and stimulus files are never stored in presets.
 
