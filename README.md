@@ -5,7 +5,7 @@
 
 **Gamepad-based Continuous Affect Tracing System**
 
-Participants rate how they feel (valence and arousal) by moving a gamepad thumbstick while they watch, view or listen to stimuli. They can rate continuously, give one rating per stimulus, or both. Images, video and audio can be mixed in one session.
+G-CATS enables the continuous capture of self-reported affective ratings on a dual-axis Cartesian grid using a gamepad thumbstick. It also supports summary ratings within the same session, collected either before or after each stimulus. Images, videos, and audio files can be mixed in a single session.
 
 For how the code is laid out, See [app_design.md](app_design.md).
 
