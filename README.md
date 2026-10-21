@@ -20,7 +20,7 @@ python run_gcats.py
 
 ## Windows Installer
 
-Please use this link to download the latest release of the software that includes `GCATS-setup.exe`. Download and double click on it to Install the GCATS app.
+Please use [this link](https://github.com/pathakdivya/GCATS/releases/tag/v.1.0) to download the latest release of the software that includes `GCATS-setup.exe`. Download and double click on it to Install the GCATS app.
 
 ## Running a session
 
