@@ -169,7 +169,7 @@ Our development of GCATS is guided by FAIR Guiding Principles for scientific dat
 
 The rating interface that overlays on top of the stimuli, builds on the dual-axis valence–arousal space of the circumplex model of affect ([Russell, 1980](https://doi.org/10.1037/h0077714)). It also builds on earlier continuous rating tools, in particular DARMA ([Girard & Wright, 2018](https://doi.org/10.3758/s13428-017-0915-5)), and on joystick-based continuous annotation as used in the CASE dataset ([Sharma et al., 2019](https://doi.org/10.1038/s41597-019-0209-0)) and described in ([Sharma et al,. 2017](10.1109/TAFFC.2017.2772882)) . Interface design was informed by usability heuristics ([Nielsen, 1994](https://doi.org/10.1145/191666.191729)), especially visibility of system status, error prevention and consistency. These appear in GCATS as the lefthand side rails that shows setup progress, the live verification page and the saving of all settings with each session.
 
-Gamepad handling draws on game-development practice. The dead zone and drift correction follow widely used guidance on thumbstick dead zones ([Sutphin, 2013](https://www.gamedeveloper.com/disciplines/doing-thumbstick-dead-zones-right)). Gamepad mapping, button choices and the holding style were informed by the Xbox Accessibility Guidelines ([Microsoft, n.d.](https://learn.microsoft.com/en-us/gaming/accessibility/guidelines)). The mapping from the circular thumbstick range to the square rating grid is based on analytical disc-to-square mappings ([Fong, 2015](https://arxiv.org/abs/1509.06344
+Gamepad handling draws on game-development practice. The dead zone and drift correction follow widely used guidance on thumbstick dead zones ([Sutphin, 2013](https://www.gamedeveloper.com/disciplines/doing-thumbstick-dead-zones-right)). Gamepad mapping, button choices and the holding style were informed by the Xbox Accessibility Guidelines ([Microsoft](https://learn.microsoft.com/en-us/gaming/accessibility/guidelines)). The mapping from the circular thumbstick range to the square rating grid is based on analytical disc-to-square mappings ([Fong, 2015](https://arxiv.org/abs/1509.06344
 )). Input is read through the [pygame joystick module](https://www.pygame.org), and the interface is built with Qt for Python ([PySide6](https://doc.qt.io/qtforpython-6/)) and we use [ffpyplayer](https://matham.github.io/ffpyplayer) for media playback.
 
 > References
@@ -180,7 +180,7 @@ Gamepad handling draws on game-development practice. The dead zone and drift cor
 > 
 > - Girard, J. M., & Wright, A. G. C. (2018). DARMA: Software for dual axis rating and media annotation. Behavior Research Methods, 50(3), 902–909. https://doi.org/10.3758/s13428-017-0915-5
 > 
-> - Microsoft. (n.d.). Xbox Accessibility Guidelines. Retrieved October 23, 2026, from https://learn.microsoft.com/en-us/gaming/accessibility/guidelines
+> - Microsoft Learn. Xbox Accessibility Guidelines. Retrieved October 23, 2026, from https://learn.microsoft.com/en-us/gaming/accessibility/guidelines
 > 
 > - Nielsen, J. (1994). Enhancing the explanatory power of usability heuristics. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (pp. 152–158). ACM. https://doi.org/10.1145/191666.191729
 > 
