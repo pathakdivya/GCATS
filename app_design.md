@@ -160,4 +160,42 @@ Rows stay in memory during a trial and are written at the end of each trial (`Se
 > }
 > ```
 > 
-> - Your last-used settings are saved to `C:\Users\<you>\.gcats\default_preset.json` (Windows) | `~/.gcats/default_preset.json` (macOS / Linux) and loaded on the next start. 
+> - Your last-used settings are saved to `C:\Users\<you>\.gcats\default_preset.json` (Windows) | `~/.gcats/default_preset.json` (macOS / Linux) and loaded on the next start.
+
+# Design Statements 
+
+Our development of GCATS is guided by FAIR Guiding Principles for scientific data management ([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18)) and their adaptation for research software, FAIR4RS (Barker et al., 2022). Our source code is openly hosted on this Github Repository. Each release is archived on Zenodo with a persistent DOI. The software is distributed under an open-source licence and documented in the `Readme.md` and the `GCATS wiki` so that others can install it easily. GCATS also follows the Software Citation Principles (Smith et al., 2016), with a recommended citation provided in the repository. The general organisation of the project, including **modular code**, version control, a requirements file, a README and contribution guidelines, follows the recommendations of Wilson et al. (2017) for scientific computing. The project’s transparency practices are aligned with the Transparency and Openness Promotion (TOP) Guidelines (Nosek et al., 2015).
+
+The rating interface that overlays on top of the stimuli, builds on the dual-axis valence–arousal space of the circumplex model of affect (Russell, 1980). It also builds on earlier continuous rating tools, in particular DARMA (Girard & Wright, 2018), and on joystick-based continuous annotation as used in the CASE dataset (Sharma et al., 2019). Interface design was informed by established usability heuristics (Nielsen, 1994), especially visibility of system status, error prevention and consistency. These appear in GCATS as the lefthand side rails that shows setup progress, the live verification page and the saving of all settings with each session.
+
+Gamepad handling draws on game-development practice. The dead zone and drift correction follow widely used guidance on thumbstick dead zones (Sutphin, 2013). Gamepad mapping, button choices and the holding style were informed by the Xbox Accessibility Guidelines (Microsoft, n.d.). The optional mapping from the circular thumbstick range to the square rating grid is based on analytical disc-to-square mappings (Fong, 2015). Input is read through the pygame joystick module, and the interface is built with Qt for Python (PySide6).
+
+References
+
+- Barker, M., Chue Hong, N. P., Katz, D. S., Lamprecht, A.-L., Martinez-Ortiz, C., Psomopoulos, F., Harrow, J., Castro, L. J., Gruenpeter, M., Martinez, P. A., & Honeyman, T. (2022). Introducing the FAIR Principles for research software. Scientific Data, 9, 622. https://doi.org/10.1038/s41597-022-01710-x
+
+- Fong, C. (2015). Analytical methods for squaring the disc [Preprint]. arXiv. https://arxiv.org/abs/1509.06344
+
+- Girard, J. M. (2014). CARMA: Software for continuous affect rating and media annotation. Journal of Open Research Software, 2(1), e5. https://doi.org/10.5334/jors.ar
+
+- Girard, J. M., & Wright, A. G. C. (2018). DARMA: Software for dual axis rating and media annotation. Behavior Research Methods, 50(3), 902–909. https://doi.org/10.3758/s13428-017-0915-5
+
+- Microsoft. (n.d.). Xbox Accessibility Guidelines. Retrieved October 23, 2026, from https://learn.microsoft.com/en-us/gaming/accessibility/guidelines
+
+- Nielsen, J. (1994). Enhancing the explanatory power of usability heuristics. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (pp. 152–158). ACM. https://doi.org/10.1145/191666.191729
+
+- Nosek, B. A., Alter, G., Banks, G. C., Borsboom, D., Bowman, S. D., Breckler, S. J., … Yarkoni, T. (2015). Promoting an open research culture. Science, 348(6242), 1422–1425. https://doi.org/10.1126/science.aab2374
+
+- Russell, J. A. (1980). A circumplex model of affect. Journal of Personality and Social Psychology, 39(6), 1161–1178. https://doi.org/10.1037/h0077714
+
+- Sharma, K., Castellini, C., van den Broek, E. L., Albu-Schaeffer, A., & Schwenker, F. (2019). A dataset of continuous affect annotations and physiological signals for emotion analysis. Scientific Data, 6, 196. https://doi.org/10.1038/s41597-019-0209-0
+
+- Smith, A. M., Katz, D. S., Niemeyer, K. E., & FORCE11 Software Citation Working Group. (2016). Software citation principles. PeerJ Computer Science, 2, e86. https://doi.org/10.7717/peerj-cs.86
+
+- Sutphin, J. (2013). Doing thumbstick dead zones right. Game Developer. https://www.gamedeveloper.com/disciplines/doing-thumbstick-dead-zones-right
+
+- Wilkinson, M. D., Dumontier, M., Aalbersberg, Ij. J., et al. (2016). The FAIR Guiding Principles for scientific data management and stewardship. Scientific Data, 3, 160018. https://doi.org/10.1038/sdata.2016.18
+
+- Wilson, G., Bryan, J., Cranston, K., Kitzes, J., Nederbragt, L., & Teal, T. K. (2017). Good enough practices in scientific computing. PLOS Computational Biology, 13(6), e1005510. https://doi.org/10.1371/journal.pcbi.1005510
+
+- Software: pygame (https://www.pygame.org), Qt for Python / PySide6 (https://doc.qt.io/qtforpython-6/), ffpyplayer (https://matham.github.io/ffpyplayer/).
